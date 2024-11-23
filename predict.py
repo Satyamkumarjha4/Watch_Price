@@ -3,7 +3,7 @@ import numpy as np
 import config
 import pandas as pd
 from train import TrainModel
-from data import PreprocessData
+from data import PreprocessingData
 
 
 class Product:

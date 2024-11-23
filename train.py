@@ -3,7 +3,7 @@ import config
 import pickle
 import pandas as pd
 import xgboost as xgb
-from data import PreprocessData
+from data import PreprocessingData
 from sklearn.metrics import r2_score
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.model_selection import GridSearchCV
