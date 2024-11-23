@@ -20,7 +20,7 @@ class TrainModel:
         try:
             if not os.path.exists(config.CLEAN_FILE_PATH):
                 raise FileNotFoundError(
-                    f'file: {config.CLEAN_FILE_PATH} not fount!')
+                    f'file: {config.CLEAN_FILE_PATH} not found!')
         except Exception as e:
             print(e)
             pdo = PreprocessData()

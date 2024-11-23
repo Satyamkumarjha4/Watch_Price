@@ -56,7 +56,7 @@ class Predict:
 
     def predict_row(self, row: Product):
         self.df = row.to_dataframe()
-        ps = PreprocessData()
+        ps = PreprocessingData()
         self.df = ps.clean_df_predict(self.df)
         return self.df
 
