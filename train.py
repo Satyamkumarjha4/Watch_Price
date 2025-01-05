@@ -3,7 +3,7 @@ import config
 import pickle
 import pandas as pd
 import xgboost as xgb
-from data import PreprocessingData
+from data import PreprocessData
 from sklearn.metrics import r2_score
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.model_selection import GridSearchCV
@@ -20,7 +20,7 @@ class TrainModel:
         try:
             if not os.path.exists(config.CLEAN_FILE_PATH):
                 raise FileNotFoundError(
-                    f'file: {config.CLEAN_FILE_PATH} not found!')
+                    f'file: {config.CLEAN_FILE_PATH} not fount!')
         except Exception as e:
             print(e)
             pdo = PreprocessData()

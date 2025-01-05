@@ -3,7 +3,7 @@ import numpy as np
 import config
 import pandas as pd
 from train import TrainModel
-from data import PreprocessingData
+from data import PreprocessData
 
 
 class Product:
@@ -56,7 +56,7 @@ class Predict:
 
     def predict_row(self, row: Product):
         self.df = row.to_dataframe()
-        ps = PreprocessingData()
+        ps = PreprocessData()
         self.df = ps.clean_df_predict(self.df)
         return self.df
 
